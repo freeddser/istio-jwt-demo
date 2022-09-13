@@ -20,7 +20,9 @@
 ##### get new token
     python gen-jwt.py  private.key --expire=3000000 --iss "testing@secure.istio.io" > demo.jwt
 
-
+##### check token with jwt.io
+    https://jwt.io/
+![img.png](img.png)
 ##### test with token
     you can use this demo key:
     https://raw.githubusercontent.com/freeddser/istio-jwt-demo/master/demo.jwt
