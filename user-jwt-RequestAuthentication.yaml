@@ -1,0 +1,13 @@
+apiVersion: security.istio.io/v1beta1
+kind: RequestAuthentication
+metadata:
+  name: jwt-user-service-example
+  namespace:  test-cc
+spec:
+  selector:
+    matchLabels:
+      app: user-service
+  jwtRules:
+  - issuer: "testing@secure.istio.io"
+    jwksUri: "https://raw.githubusercontent.com/freeddser/istio-jwt-demo/master/jwks.json"
+
