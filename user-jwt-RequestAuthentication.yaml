@@ -9,5 +9,5 @@ spec:
       app: user-service
   jwtRules:
   - issuer: "testing@secure.istio.io"
+#    jwksUri: "https://raw.githubusercontent.com/istio/istio/release-1.5/security/tools/jwt/samples/jwks.json"
     jwksUri: "https://raw.githubusercontent.com/freeddser/istio-jwt-demo/master/jwks.json"
-
